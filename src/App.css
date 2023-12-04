@@ -1,0 +1,161 @@
+/* App.css */
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+}
+
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Place the video behind other content */
+}
+
+.video-bg {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: brightness(1.5); /* Adjust the brightness value (e.g., 1.5 for 50% brighter) */
+}
+
+.video-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #fff;
+}
+
+.restaurant-header {
+  /* height: 50px; */
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgba(232, 177, 12, 0.9);
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+.restaurant-info,
+section,
+.menu-category,
+.customer-review {
+  background-color: rgba(62, 61, 61, 0.24); /* Fully transparent background color */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(66, 66, 66, 0.1);
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: rgb(250, 52, 12);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.menu-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.menu-category {
+  background-color: rgba(215, 15, 100, 0.8); /* Transparent background color */
+  color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease; /* Add transition for a smoother effect */
+}
+
+.menu-category:hover {
+  background-color: rgba(215, 15, 100, 1); /* Change background color on hover */
+}
+
+.menu-item {
+  margin-top: 10px;
+}
+
+.customer-reviews {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.customer-review {
+  background-color: rgba(0, 0, 0, 0.6); /* Fully transparent background color */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.customer-review p {
+  margin-top: 10px;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.menu-item img {
+  width: 100%;
+  height: 150px; /* Set a fixed height for uniformity, adjust as needed */
+  object-fit: cover; /* Ensure the image covers the designated area */
+  border-radius: 8px;
+  margin-bottom: 10px; /* Adjust as needed for spacing between image and text */
+}
+
+.menu-item span {
+  color: #fff; /* Adjust text color based on your design */
+}
+
+/* Add styles for other sections as needed */
+.restaurant-header p {
+  font-size: 20px; /* Adjust the size as needed */
+}
+
+/* Add this to your CSS */
+.social-media-icons {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 10px; /* Adjust the top distance as needed */
+  right: 10px; /* Adjust the right distance as needed */
+}
+
+.icon {
+  text-align: center;
+  margin-left: 10px; /* Add some space between icons if needed */
+}
+
+.icon img {
+  width: 30px; /* Adjust the size as needed */
+  height: 30px;
+  border-radius: 50%; /* Optional: Make the icons circular */
+}
+
